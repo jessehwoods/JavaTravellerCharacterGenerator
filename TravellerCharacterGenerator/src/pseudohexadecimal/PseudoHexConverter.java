@@ -7,12 +7,12 @@ package pseudohexadecimal;
  * Any number to be converted to pseudo-hexadecimal is assumed to be an integer from 1-35
  * inclusive.
  * 
- * Any number to converted from pseudo-hexadecimal is assumed to be a character representing either
+ * Any number to be converted from pseudo-hexadecimal is assumed to be a character representing either
  * a digit 1-9 inclusive. or a capital letter A-Z inclusive.
  * 
- * Numbers in the pseudo-hexadecimal representation 1-9 inclusive are represented by the numerals.
- * Anything over 9 is represented by a capital letter, starting with A and continuing through the
- * alphabet in order.
+ * Numbers in the pseudo-hexadecimal representation 1-9 inclusive are represented by the arabic
+ * numerals 1-9.  * Anything over 9 is represented by a capital letter, starting with A and continuing 
+ * through the alphabet to Z. It ends at 35/Z.
  * 
  * @author Jesse Woods
  *
