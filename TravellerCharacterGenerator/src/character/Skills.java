@@ -1,5 +1,5 @@
 package character;
 
-public class Rank {
+public class Skills {
 
 }

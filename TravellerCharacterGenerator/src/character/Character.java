@@ -15,14 +15,9 @@ import java.util.Set;
 public class Character {
 
 	/**
-	 * Holds the name of the career the character held.
+	 * Stores name of career, rank, and terms served by the character in their career.
 	 */
-	String career;
-
-	/**
-	 * Stores rank the character achieved in their career.
-	 */
-	private Rank rank;
+	private EmploymentHistory history;
 	
 	/**
 	 * Stores the name of the character.
@@ -50,17 +45,12 @@ public class Character {
 	/**
 	 * Stores skills and their rating. 
 	 */
-	private Set<Skill> skills;
-	
-	/**
-	 * Stores the credits posessed by the character.
-	 */
-	private int credits;
+	private Skills skills;
 	
 	/**
 	 * Stores possessions.
 	 */
-	private List<Possession> posessions;
+	private Posessions posessions;
 	
 	/**
 	 * Constructor that takes all fields. 
@@ -73,24 +63,27 @@ public class Character {
 	 * @param skills the character's skills.
 	 * @param posessions possession of the character.
 	 */
-	public Character(String career, 
-			Rank rank, 
+	public Character(
+			EmploymentHistory history, 
 			String name, 
 			Statline attributes, 
 			int age, 
-			double terms, 
-			Set<Skill> skills, 
-			int credits,
-			List<Possession> posessions) {
-		//TODO: finish constructor
+			Skills skills, 
+			Posessions posessions) {
+		this.history = history;
+		this.name = name;
+		this.attributes = attributes;
+		this.age = age;
+		this.skills = skills;
+		this.posessions = posessions;
 	}
 	
 	/**
-	 * Gives the full string representation of the character in the following format:
+	 * Gives a string representation of the character in the following format:
 	 * [Career] [Rank] [Name (with noble title)] [attributes] Age [age]
 	 * [terms] terms Cr[credits]
-	 * [skills]
-	 * [possessions]
+	 * [skills listed]
+	 * [possessions other than credits listed]
 	 */
 	public String toString() {
 		//TODO
