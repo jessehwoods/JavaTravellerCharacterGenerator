@@ -29,7 +29,7 @@ public class PseudoHexConverter {
 	}
 	
 	/**
-	 * Converts a character representation of a pseudo-hexadecimal to an integer.
+	 * Converts a character used as a pseudo-hexadecimal number to an integer.
 	 * @param toConvert 
 	 * @return
 	 */
